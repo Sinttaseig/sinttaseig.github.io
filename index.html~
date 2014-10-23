@@ -1,16 +1,16 @@
 ---
-title:home
+title: GitHub Page
 ---
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{site.title}}</title>
+        <title>{{site:title}}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
        
             <header>
-                <h1>Configuration d'un GitHub</h1>
+                <h1>{{page.title}}</h1>
             </header>
            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ipsum eros, mollis vel ligula nec, porta venenatis lacus. Morbi turpis quam, imperdiet ut rhoncus in, pulvinar finibus neque. Sed et lorem urna. Ut auctor metus erat, a pulvinar nibh vehicula vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel ipsum urna. Mauris bibendum vulputate consequat. Curabitur eget luctus nisl.
             
