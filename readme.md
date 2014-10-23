@@ -55,8 +55,45 @@ git config --global user.name "Sinttaseig"
 git push
 
 
+Recevoir de GitHub :
+
+cd sites
+
+
+git clone https://github.com/Sinttaseig/sinttaseig.github.io.git
+
+
+Envoyer vers GitHub :
+
+Il faut se mettre dans le répertoire du dépôt :
+
+git add --all
+
+git commit -m "Initial commit"
+
+git push
+
+
+Ruby install :
+
+apt-get install ruby-dev
+
+
+Jekyll install :
+
+Télécharger le paquet jekyll
+
+sudo -s
+
+apt-get install gem
+
+gem install jekyll-2.4.0.gem
+
+jekyll serve -w
+
+
+
 
 bertrand.keller@gmail.com
-
 
 
