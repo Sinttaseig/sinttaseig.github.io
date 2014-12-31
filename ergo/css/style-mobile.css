@@ -25,6 +25,11 @@
 		line-height: 1em;
 	}
 
+    #p-accueil
+    {
+        height: 2em;
+    }
+
 	section,
 	article
 	{
