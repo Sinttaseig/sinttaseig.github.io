@@ -1,9 +1,0 @@
----
-title: home
-layout: default
----
-
-		<div class=post>
-			{{content}}
-		</div>
-
