@@ -1,0 +1,20 @@
+---
+title: Accueil
+layout: default
+---
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dui arcu, porta sed consectetur eu, blandit et mauris. Aenean massa magna, imperdiet ac risus ac, tempor pretium tellus. Donec tempor erat et condimentum tristique. Nam egestas in magna sit amet imperdiet. Sed dignissim lacus aliquam lacus tincidunt finibus. Quisque vulputate felis in nisi blandit dictum. Nam a lacus a magna suscipit pretium eget quis nisl. Fusce elementum rutrum tellus, at posuere sem dictum iaculis. Curabitur sit amet quam ac diam rutrum convallis semper quis sem. Phasellus nibh augue, vestibulum a purus ac, aliquam vestibulum sapien.
+
+
+
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
