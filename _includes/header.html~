@@ -1,5 +1,32 @@
+<!DOCTYPE html>
+<html>
 
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <head>
+    <meta charset='utf-8'>
+    <meta name="description" content="Fab1dotovh.github.io : ">
+
+ <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts 
+
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+-->
+    
+
+    <title>{{site.title}} - {{page.title}}</title>
+  </head>
+
+  
+	<p>Le header est bien appelé</p>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -23,13 +50,13 @@
                     <li>
                         <a href="contact.html">Contact</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="portfolio-1-col.html">1 Column Portfolio</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="portfolio-2-col.html">2 Column Portfolio</a>
                             </li>
                             <li>

@@ -1,16 +1,4 @@
 ---
 title: About
-layout: page
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>{{site.title}} - {{page.title}}</title>
-	</head>
-	<body>
-		<header>
-			<h1> Ma page About </h1>	
-		</header>
-		Hello World
-	</body>
-</html>
