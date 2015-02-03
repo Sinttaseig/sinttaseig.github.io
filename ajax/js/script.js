@@ -16,11 +16,23 @@ function $(el) {
 
 function changeChoix(titre){
         if (titre == 'os'){
-            document.getElementById('afficher').innerHTML='OS<br>-------------<br>Titre : <span id="titre"></span><br>Date : <span id="date"></span><br>Microsoft : <span id="microsoft"></span><br>Apple : <span id="apple"></span><br>Google OS : <span id="googleos"></span><br>Linux : <span id="linux"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire"></span><br><br>';
-            document.getElementById('format').innerHTML='Format :<br>Json<input type="radio" name="choix" value="json" onClick="getOsJson()"checked/><br>Xml<input type="radio" name="choix" value="xml" onClick="getOsXml()"/>';
+            document.getElementById('afficher').innerHTML='OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br>Microsoft : <span id="microsoft"></span><br>Apple : <span id="apple"></span><br>Google OS : <span id="googleos"></span><br>Linux : <span id="linux"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources AT Internet</span><br><br>';
+        if(document.getElementById('input-json').checked){
+		    document.getElementById("text").setAttribute('onClick', 'getOsJson()');
+            document.getElementById("graphique").setAttribute('onClick', 'getOsJson()');
+	   }else{
+            document.getElementById("text").setAttribute('onClick', 'getOsXml()');
+            document.getElementById("graphique").setAttribute('onClick', 'getOsXml()');	
+	}
         }else if (titre == 'navigateur'){
-            document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre"></span><br>Date : <span id="date"></span><br>Chrome : <span id="chrome"></span><br>Ie : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire"></span><br><br>';
-            document.getElementById('format').innerHTML='Format :<br>Json<input type="radio" name="choix" value="json" onClick="getNavigateurJson()"checked/><br>Xml<input type="radio" name="choix" value="xml" onClick="getNavigateurXml()"/>';
+            document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br>Chrome : <span id="chrome"></span><br>Ie : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources Net StatCounter</span><br><br>';
+        if(document.getElementById('input-json').checked){
+		    document.getElementById("text").setAttribute('onClick', 'getNavigateurJson()');
+            document.getElementById("graphique").setAttribute('onClick', 'getNavigateurJson()');
+	    }else{
+            document.getElementById("text").setAttribute('onClick', 'getNavigateurXml()');
+            document.getElementById("graphique").setAttribute('onClick', 'getNavigateurXml()');	
+	   }
         }
 }
 
