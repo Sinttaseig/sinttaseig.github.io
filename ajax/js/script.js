@@ -1,18 +1,7 @@
-function MAJ() {
-    document.getElementById("titre").innerHTML = "navigateur";
-    document.getElementById("date").innerHTML = "Septembre2015";
-    document.getElementById("chrome").innerHTML = "10%";
-    document.getElementById("ie").innerHTML = "20%";
-    document.getElementById("firefox").innerHTML = "30%";
-    document.getElementById("safari").innerHTML = "40%";
-    document.getElementById("opera").innerHTML = "50%";
-    document.getElementById("autre").innerHTML = "60%";
-    document.getElementById("commentaire").innerHTML = "sources Wikipédia";
-}
-
 function $(el) {
     return document.getElementById(el);
 }
+
 
 function changeChoix(titre){
         if (titre == 'os'){
