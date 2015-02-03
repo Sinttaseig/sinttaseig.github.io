@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<os>
+        <titre>Part des visites web en Europe réparties par OS</titre>
+        <date>Août 2014</date>
+        <microsoft>65,1%</microsoft>
+        <apple>22,1%</apple>
+        <googleos>11,4%</googleos>
+        <linux>1,1%</linux>
+        <autre>0,3%</autre>
+        <commentaire>sources AT Internet</commentaire>
+</os>
