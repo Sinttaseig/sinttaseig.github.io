@@ -13,9 +13,9 @@ function init(type){
 
 function init2(type){
 	if(type == 1){
-		document.getElementById('afficher').innerHTML='OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br><br><canvas id="myChart" width="350" height="250"></canvas><br>Commentaire : <span id="commentaire">sources AT Internet</span></div><br><br>';
+		document.getElementById('afficher').innerHTML='OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br><br><canvas id="myChart" width="350" height="250" style="font-family: "Oxygen", sans-serif;"></canvas><br>Commentaire : <span id="commentaire">sources AT Internet</span></div><br><br>';
 	}else{
-	    document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br><br><canvas id="myChart" width="350" height="250"></canvas><br><br>Commentaire : <span id="commentaire">sources Net StatCounter</span></div><br><br>';
+	    document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br><br><canvas id="myChart" width="350" height="250" style="font-family: "Oxygen", sans-serif;"></canvas><br><br>Commentaire : <span id="commentaire">sources Net StatCounter</span></div><br><br>';
 	}
 }
 
