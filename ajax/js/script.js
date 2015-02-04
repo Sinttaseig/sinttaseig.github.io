@@ -13,7 +13,7 @@ function changeChoix(titre){
             document.getElementById("text").setAttribute('onClick', 'getOsXml()');
             document.getElementById("graphique").setAttribute('onClick', 'getOsXml()');	
 	}
-        }else if (titre == 'navigateur'){
+        }else if(titre== 'navigateur'){
             document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br>Chrome : <span id="chrome"></span><br>Ie : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources Net StatCounter</span><br><br>';
         if(document.getElementById('input-json').checked){
 		    document.getElementById("text").setAttribute('onClick', 'getNavigateurJson()');
