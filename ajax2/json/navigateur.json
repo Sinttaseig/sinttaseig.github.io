@@ -1,0 +1,11 @@
+{
+    "titre" : "Répartition des navigateur web",
+    "date" : "Décembre 2014",
+    "chrome" : "49,7%",
+    "ie" : "24,6%",
+    "firefox" : "18%",
+    "safari" : "4,7%",
+    "opera" : "1,5%",
+    "autre" : "1,5%",
+    "commentaire" : "sources Net StatCounter (json)"
+}

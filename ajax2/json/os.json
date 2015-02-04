@@ -1,0 +1,10 @@
+{
+    "titre" : "Part des visites web en Europe réparties par OS",
+    "date" : "Août 2014",
+    "microsoft" : "65,1%",
+    "apple" : "22,1%",
+    "googleos" : "11,4%",
+    "linux" : "1,1%",
+    "autre" : "0,3%",
+    "commentaire" : "sources AT Internet (json)"
+}

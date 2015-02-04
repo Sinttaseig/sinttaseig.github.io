@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<navigateur>
+        <titre>Répartition des navigateur web</titre>
+        <date>Décembre 2014</date>
+        <chrome>49,7%</chrome>
+        <ie>24,6%</ie>
+        <firefox>18%</firefox>
+        <safari>4,7%</safari>
+        <opera>1,5%</opera>
+        <autre>1,5%</autre>
+        <commentaire>sources Net StatCounter (xml)</commentaire>
+</navigateur>
