@@ -6,23 +6,55 @@ function $(el) {
 function changeChoix(titre){
         if (titre == 'os'){
             document.getElementById('afficher').innerHTML='OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br>Microsoft : <span id="microsoft"></span><br>Apple : <span id="apple"></span><br>Google OS : <span id="googleos"></span><br>Linux : <span id="linux"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources AT Internet</span><br><br>';
-        if(document.getElementById('input-json').checked){
-		    document.getElementById("text").setAttribute('onClick', 'getOsJson()');
-            document.getElementById("graphique").setAttribute('onClick', 'getOsJson()');
-	   }else{
-            document.getElementById("text").setAttribute('onClick', 'getOsXml()');
-            document.getElementById("graphique").setAttribute('onClick', 'getOsXml()');	
-	}
+			/*if(document.getElementById('input-json').checked){
+				document.getElementById("text").setAttribute('onClick', 'getOsJson()');
+				document.getElementById("graphique").setAttribute('onClick', 'getOsJson()');
+			}else{
+				document.getElementById("text").setAttribute('onClick', 'getOsXml()');
+				document.getElementById("graphique").setAttribute('onClick', 'getOsXml()');	
+			}*/
+		
         }else if(titre== 'navigateur'){
             document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br>Chrome : <span id="chrome"></span><br>Ie : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources Net StatCounter</span><br><br>';
-        if(document.getElementById('input-json').checked){
-		    document.getElementById("text").setAttribute('onClick', 'getNavigateurJson()');
-            document.getElementById("graphique").setAttribute('onClick', 'getNavigateurJson()');
-	    }else{
-            document.getElementById("text").setAttribute('onClick', 'getNavigateurXml()');
-            document.getElementById("graphique").setAttribute('onClick', 'getNavigateurXml()');	
-	   }
+			/*if(document.getElementById('input-json').checked){
+				document.getElementById("text").setAttribute('onClick', 'getNavigateurJson()');
+				document.getElementById("graphique").setAttribute('onClick', 'getNavigateurJson()');
+			}else{
+				document.getElementById("text").setAttribute('onClick', 'getNavigateurXml()');
+				document.getElementById("graphique").setAttribute('onClick', 'getNavigateurXml()');	
+			}*/
         }
+}
+
+function XMLOrJSON(){
+	var type = document.getElementById('type').value;
+	var json = document.getElementById('input-json');
+	var xml = document.getElementById('input-xml');
+	if(type == "os"){
+		if(json.checked){
+			//alert("json os");
+			getOsJson();
+			/*document.getElementById("text").setAttribute('onClick', 'getOsJson()');
+			document.getElementById("graphique").setAttribute('onClick', 'getOsJson()');*/
+		}else if(xml.checked){
+			//alert("xml os");
+			getOsXml();
+			/*document.getElementById("text").setAttribute('onClick', 'getOsXml()');
+			document.getElementById("graphique").setAttribute('onClick', 'getOsXml()');	*/
+		}
+	}else if(type == "navigateur"){
+		if(json.checked){
+			//alert("json navigateur");
+			getNavigateurJson();
+			/*document.getElementById("text").setAttribute('onClick', 'getNavigateurJson()');
+			document.getElementById("graphique").setAttribute('onClick', 'getNavigateurJson()');*/
+		}else if(xml.checked){
+			//alert("xml navigateur");
+			getNavigateurXml();
+			/*document.getElementById("text").setAttribute('onClick', 'getNavigateurXml()');
+			document.getElementById("graphique").setAttribute('onClick', 'getNavigateurXml()');*/
+		}
+	}
 }
 
 function getOsJson() {
@@ -71,7 +103,6 @@ function getNavigateurJson() {
     requete_ajax.open('GET', './json/navigateur.json', false); //Utilisation de la méthode GET
     requete_ajax.send(null); //Envoie de la requête
     var data = eval('(' + requete_ajax.responseText + ')'); //Evaluation de la réponse (traitement)
-
     $('titre').innerHTML = data.titre;
     $('date').innerHTML = data.date;
     $('chrome').innerHTML = data.chrome;

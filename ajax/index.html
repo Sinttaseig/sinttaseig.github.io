@@ -17,7 +17,7 @@
     <section>
         <form>
             Informations :
-            <select name="choix" size="1" onChange="changeChoix(this.value)">
+            <select id="type" name="choix" size="1" onChange="changeChoix(this.value)">
                 <option value="default">Choix</option>
                 <option value="os">OS</option>
                 <option value="navigateur">Navigateur</option>
@@ -34,7 +34,7 @@
             <br>
             <br>Mode d'affichage :
             <br>
-            <input id="text" type="button" value="Mode texte">
+            <input id="text" type="button" value="Mode texte" onClick="XMLOrJSON()">
             <input id="graphique" type="button" value="Mode graphique"><br><br>
             <input type="reset" name="nom" value="Reset">
         </form>
