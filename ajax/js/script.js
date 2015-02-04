@@ -7,7 +7,7 @@ function init(type){
 	if(type == 1){
 		document.getElementById('afficher').innerHTML='<div id="all">OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br>Microsoft : <span id="microsoft"></span><br>Apple : <span id="apple"></span><br>Google OS : <span id="googleos"></span><br>Linux : <span id="linux"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources AT Internet</span><br><br>';
 	}else{
-	    document.getElementById('afficher').innerHTML='<div id="all">Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br>Chrome : <span id="chrome"></span><br>Ie : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources Net StatCounter</span><br><br>';
+	    document.getElementById('afficher').innerHTML='<div id="all">Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br>Chrome : <span id="chrome"></span><br>IE : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources Net StatCounter</span><br><br>';
 	}
 }
 
@@ -81,7 +81,7 @@ function graph(){
 	}else if(type == "navigateur"){
         init2(2);
 		var data = {
-			labels: ["Chrome", "IE", "Firefox", "Safari", "Opera", "Autres"],
+			labels: ["Chrome", "IE", "Firefox", "Safari", "Opera", "Autre"],
 			datasets: [
 				{
 					label: "Navigateur",
