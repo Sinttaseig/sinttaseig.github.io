@@ -53,14 +53,18 @@ function XMLOrJSON(){
 	}
 }
 
+function reset(){
+    document.getElementById('afficher').innerHTML='Statistique';
+}
+
 function graph(){
 
 	var type = document.getElementById('type').value;
 	var json = document.getElementById('input-json');
 	var xml = document.getElementById('input-xml');
 
-	if(type == "os"){
-		init2(1);
+	if(type == "os"){ 
+        init2(1);
 		var data = {
 			labels: ["Microsoft", "Apple", "Google OS", "Linux", "Autre"],
 			datasets: [
@@ -75,7 +79,7 @@ function graph(){
 			]
 		};
 	}else if(type == "navigateur"){
-		init2(2);
+        init2(2);
 		var data = {
 			labels: ["Chrome", "IE", "Firefox", "Safari", "Opera", "Autres"],
 			datasets: [
@@ -89,6 +93,7 @@ function graph(){
 				}
 			]
 		};
+        
 	}
 
 			var ctx = document.getElementById("myChart").getContext("2d");

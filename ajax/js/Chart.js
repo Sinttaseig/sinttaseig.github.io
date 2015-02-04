@@ -8,6 +8,18 @@
  * https://github.com/nnnick/Chart.js/blob/master/LICENSE.md
  */
 
+WebFontConfig = {
+    google: { families: [ 'Oxygen::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
 
 (function(){
 
@@ -98,7 +110,7 @@
 			scaleFontFamily: "'Oxygen', sans-serif",
 
 			// Number - Scale label font size in pixels
-			scaleFontSize: 12,
+			scaleFontSize: 14,
 
 			// String - Scale label font weight style
 			scaleFontStyle: "normal",
@@ -125,7 +137,7 @@
 			tooltipFillColor: "rgba(0,0,0,0.8)",
 
 			// String - Tooltip label font declaration for the scale label
-			tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+			tooltipFontFamily: "'Oxygen', sans-serif",
 
 			// Number - Tooltip label font size in pixels
 			tooltipFontSize: 14,
@@ -137,7 +149,7 @@
 			tooltipFontColor: "#fff",
 
 			// String - Tooltip title font declaration for the scale label
-			tooltipTitleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+			tooltipTitleFontFamily: "'Oxygen', sans-serif",
 
 			// Number - Tooltip title font size in pixels
 			tooltipTitleFontSize: 14,
