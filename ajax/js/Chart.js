@@ -8,7 +8,10 @@
  * https://github.com/nnnick/Chart.js/blob/master/LICENSE.md
  */
 
-WebFontConfig = {
+
+(function(){
+    
+    WebFontConfig = {
     google: { families: [ 'Oxygen::latin' ] }
   };
   (function() {
@@ -20,8 +23,6 @@ WebFontConfig = {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })();
-
-(function(){
 
 	"use strict";
 
