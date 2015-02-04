@@ -5,17 +5,17 @@ function $(el) {
 
 function init(type){
 	if(type == 1){
-		document.getElementById('afficher').innerHTML='<div id="all">OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br>Microsoft : <span id="microsoft"></span><br>Apple : <span id="apple"></span><br>Google OS : <span id="googleos"></span><br>Linux : <span id="linux"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources AT Internet</span></div><br><br>';
+		document.getElementById('afficher').innerHTML='<div id="all">OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br>Microsoft : <span id="microsoft"></span><br>Apple : <span id="apple"></span><br>Google OS : <span id="googleos"></span><br>Linux : <span id="linux"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources AT Internet</span><br><br>';
 	}else{
-	    document.getElementById('afficher').innerHTML='<div id="all">Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br>Chrome : <span id="chrome"></span><br>Ie : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources Net StatCounter</span></div><br><br>';
+	    document.getElementById('afficher').innerHTML='<div id="all">Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br>Chrome : <span id="chrome"></span><br>Ie : <span id="ie"></span><br>Firefox : <span id="firefox"></span><br>Safari : <span id="safari"></span><br>Opera : <span id="opera"></span><br>Autre : <span id="autre"></span><br>Commentaire : <span id="commentaire">sources Net StatCounter</span><br><br>';
 	}
 }
 
 function init2(type){
 	if(type == 1){
-		document.getElementById('afficher').innerHTML='OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br><br><canvas id="myChart" width="350" height="250" style="font-family: "Oxygen", sans-serif;"></canvas><br>Commentaire : <span id="commentaire">sources AT Internet</span></div><br><br>';
+		document.getElementById('afficher').innerHTML='OS<br>-------------<br>Titre : <span id="titre">Part des visites web en Europe réparties par OS</span><br>Date : <span id="date">Août 2014</span><br><br><canvas id="graph" width="350" height="250"></canvas><br>Commentaire : <span id="commentaire">sources AT Internet</span><br><br>';
 	}else{
-	    document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br><br><canvas id="myChart" width="350" height="250" style="font-family: "Oxygen", sans-serif;"></canvas><br><br>Commentaire : <span id="commentaire">sources Net StatCounter</span></div><br><br>';
+	    document.getElementById('afficher').innerHTML='Navigateur<br>-------------<br>Titre : <span id="titre">Répartition des navigateur web</span><br>Date : <span id="date">Décembre 2014</span><br><br><canvas id="graph" width="350" height="250"></canvas><br><br>Commentaire : <span id="commentaire">sources Net StatCounter</span><br><br>';
 	}
 }
 
@@ -33,7 +33,7 @@ function XMLOrJSON(){
 	var json = document.getElementById('input-json');
 	var xml = document.getElementById('input-xml');
 	if(type == "os"){
-		if($("myChart")){
+		if($("graph")){
 			init(1);
 		}
 		if(json.checked){
@@ -42,7 +42,7 @@ function XMLOrJSON(){
 			getOsXml();
 		}
 	}else if(type == "navigateur"){
-		if($("myChart")){
+		if($("graph")){
 			init(2);
 		}
 		if(json.checked){
@@ -53,7 +53,7 @@ function XMLOrJSON(){
 	}
 }
 
-function reset(){
+function start(){
     document.getElementById('afficher').innerHTML='Statistique';
 }
 
@@ -96,7 +96,7 @@ function graph(){
         
 	}
 
-			var ctx = document.getElementById("myChart").getContext("2d");
+			var ctx = document.getElementById("graph").getContext("2d");
 		var myBarChart = new Chart(ctx).Bar(data, {
 			scaleBeginAtZero : true,
 			scaleShowGridLines : true,
