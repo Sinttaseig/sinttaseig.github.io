@@ -5,11 +5,12 @@
     <title>Ajax 2015</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <script type="text/javascript" src="js/script.js"></script>
+
 </head>
 
 <body>
     <header>
+	
         "Evaluation JavaScript"
         <br>
         <br>DUMORT Pierre-Emmanuel
@@ -35,18 +36,21 @@
             <br>Mode d'affichage :
             <br>
             <input id="text" type="button" value="Mode texte" onClick="XMLOrJSON()">
-            <input id="graphique" type="button" value="Mode graphique"><br><br>
+            <input id="graphique" type="button" value="Mode graphique" onClick="modeGraphique()"><br><br>
+            <input type="reset" name="nom" value="Reset">
         </form>
     </section>
     <article id="afficher">
         Statistiques
-        <div id="histo">
-
-        </div>
+        
     </article>
+
+
     <footer>
         Licence Pro ATC - Janvier 2015
     </footer>
+	    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/Chart.js"></script>
 </body>
 
 </html>
